@@ -1,13 +1,18 @@
+import java.util.Scanner;
 public class Factorial{
-static int factorial(int n)
+public static void main(String args[]){
+ int number;
+System.out.println("enter the number:");
+Scanner Scanner =new Scanner(System.in);
+number=Scanner.nextInt();
+Scanner.close();
+long fact=1;
+int i=1;
+while(i<=number)
 {
-if(n==0)
-return 1;
-return n*factorial(n-1);
+fact =  fact*i;
+i++;
 }
-public static void main(String []args)
-{
-int num=5;
-System.out.println("Factorial of " +num + "is" +factorial(5));
+System.out.println("Factorial of"+number+"is:"+fact);
 }
 }

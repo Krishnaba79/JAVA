@@ -8,7 +8,7 @@ int weight=input.nextInt();
 System.out.println("enter Age:");
 int Age=input.nextInt();
 
-if(weight<40)
+if(weight>50)
 {
 System.out.println("you can Donate Blood");
 }
