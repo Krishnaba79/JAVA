@@ -1,28 +1,61 @@
 import java.util.Scanner;
-public class Calculator {
-    public static void main(String[] args)
-    {
-        Scanner input = new Scanner(System.in);
-        System.out.println("Enter a String");
-        String str = input.nextLine();
-        System.out.println(str);
+class Calculator
+{	
+	public static void main(String args[])
+	{
+		Scanner input=new Scanner(System.in);
 
-        System.out.println("Enter a Number");
-        int a = input.nextInt();
-        System.out.println(a);
+		System.out.println("1.Addition");	
+		System.out.println("2.Subtraction");
+		System.out.println("3.Multiplication");
+		System.out.println("4.Division");
 
-        System.out.println("Enter a Number");
-        int b = input.nextInt();
-        System.out.println(b);
-        System.out.println("sum of the number:");
-        System.out.println(a+b);
-        System.out.println("subtraction of the number:");
-        System.out.println(a-b);
-        System.out.println("multiplaction of the number:");
-        System.out.println(a*b);
-        System.out.println("division of the number:");
-        System.out.println(a/b);
+		System.out.println("Enter your choice");
+		int choice=input.nextInt();
+	
+		if(choice==1)
+		{
+			System.out.println("You've Selected Addition");
+			System.out.println("Enter the First No:");
+			int no=input.nextInt();
+			System.out.println("Enter the Second No:");
+			int no1=input.nextInt();
+			System.out.println("Addition of two no is:" + (no+no1));
+		}
 
+		else if(choice==2)
+		{
+			System.out.println("You've Selected Subtraction");
+			System.out.println("Enter the First No:");
+			int no=input.nextInt();
+			System.out.println("Enter the Second No:");
+			int no1=input.nextInt();
+			System.out.println("Subtraction of two no is:" + (no-no1));
+		}
 
-    }
+		else if(choice==3)
+		{
+			System.out.println("You've Selected Multiplication");
+			System.out.println("Enter the First No:");
+			int no=input.nextInt();
+			System.out.println("Enter the Second No:");
+			int no1=input.nextInt();
+			System.out.println("Multiplication of two no is:" + (no*no1));
+		}
+
+		else if(choice==4)
+		{
+			System.out.println("You've Selected Division");
+			System.out.println("Enter the First No:");
+			int no=input.nextInt();
+			System.out.println("Enter the Second No:");
+			int no1=input.nextInt();
+			System.out.println("Division of two no is:" + (no/no1));
+		}
+
+		else
+		{
+			System.out.println("Invalid Choice");
+		}
+	}
 }
