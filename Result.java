@@ -1,28 +1,47 @@
 import java.util.Scanner;
+class Result
+{
+	public static void main(String[] args)
+	{
+		int total;
+		float avg;
 
-public class Result {
+		Scanner input=new Scanner(System.in);
+		System.out.println("Enter the marks of Sub1:");
+		int sub1=input.nextInt();
 
-	public static void main(String[] args) {
+		System.out.println("Enter the marks of Sub2:");
+		int sub2=input.nextInt();
 
-		Scanner scan = new Scanner(System.in);
-		System.out.println("Enter percentage marks");
-		double percentage = scan.nextDouble();
+		System.out.println("Enter the marks of Sub3:");
+		int sub3=input.nextInt();
 
-		if(percentage >= 90){
-			System.out.println("Excellent: Grade A");
-		}else if(percentage < 90 && percentage >= 80){
-			System.out.println("Very Good: Grade B");
-		}else if(percentage < 80 && percentage >= 70){
-			System.out.println("Good: Grade C");
-		}else if(percentage < 70 && percentage >= 60){
-			System.out.println("Satisfactory: Grade D");
-		}else if(percentage < 60 && percentage >= 50){
-			System.out.println("Work Hard: Grade E");
-		}else if(percentage < 50 && percentage >= 40){
-			System.out.println("Just Passed: Grade F");
-		}else {
-			System.out.println("Failed!");
+		total=sub1+sub2+sub3;
+		avg=total/3;
+		
+		if(avg>70)
+		{
+			System.out.println("Grade A");
 		}
-	}
+		
+		else if(avg>60)
+		{
+			System.out.println("Grade B");
+		}
+		
+		else if(avg>50)
+		{
+			System.out.println("Grade C");
+		}
+	
+		else if(avg>40)
+		{
+			System.out.println("Grade D");
+		}
 
+		else
+		{
+			System.out.println("Fail");
+		}	
+	}
 }

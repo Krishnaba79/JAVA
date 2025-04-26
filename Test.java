@@ -1,11 +1,12 @@
-public class Test{
-public static void main(String args[]){
-int x =10;
-while(x<20);
-{
-System.out.print("value of x:" + x);
-x++;
-System.out.print("\n");
+public class Test {
+
+public static void main(String args[]) {
+System.out.println("use for toString");
+
+System.out.println(Character.toString('c'));
+
+System.out.println(Character.toString('C'));
+
 }
-}
+
 }
