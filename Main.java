@@ -1,21 +1,22 @@
-import java.util.*;
-public class main
+class Logger
 {
-	public static void main(String []args)
-	{
-		Scanner sc=new Scanner(System.in);
-		System.out.println("Enter int number");
+   private String name;
+   public String getName()
+   {
+       return this.name;
+   }
+   public void setName(String name)
+   {
+       this.name = name;
+   }
+}
 
-		int a=sc.nextInt();
-		//	  sc.nextLine();
-		System.out.println("Enter String ");
-		String s = sc.nextLine();
-		System.out.println("Enter double number");
-		
-		double d=sc.nextDouble();
-		
-		System.out.println(a);
-		System.out.println(s);
-		System.out.println(d);
-	}
+public class Main
+{
+    public static void main(String[] main)
+    {
+        Logger d =new Logger();
+        d.setName("Programiz");
+        System.out.println(d.getName());
+    }
 }

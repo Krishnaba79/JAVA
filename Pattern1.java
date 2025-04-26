@@ -1,22 +1,25 @@
 import java.util.Scanner;
-class Pattern1 {
-
-public static void main(String args[]) {
-int count=1;
-Scanner input=new Scanner(System.in);
-System.out.println("enter a rows:");
+public class Pattern1
+{
+public static void main(String[] args)
+{
+Scanner input =new Scanner(System.in);
+System.out.println("Enter the number of row to print the pattern");
 int rows=input.nextInt();
-
-   
-  
-    for (int i = 1; i <= rows; i++) {
-     
-      for (int j = 1; j <= i; j++) {
-      
-        System.out.print(count);
-        count++;
-      }
-      System.out.println( );
+System.out.println("**Printing the pattern**" );
+for(int i=rows+1;i>=1;i--)
+{
+    for(int j=i;j<rows+1;j++)
+    {
+        System.out.print(" ");
     }
+    for(int j=1;j<=(i-1*1);j++)
+    {
+        System.out.print(" *");
+    }
+
+    System.out.println();
+
+}
 }
 }
