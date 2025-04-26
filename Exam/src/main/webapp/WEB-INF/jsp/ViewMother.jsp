@@ -1,0 +1,37 @@
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<table border="1">
+		<c:forEach var="s" items="${mother}">
+		<tr>
+			<td>Mother's ID</td>
+			<td>Mother Name</td>
+			<td>Child Name</td>
+			<td>Husband Name</td>
+			<td>Mother Age</td>
+			<td>Mother Phone Number</td>
+			<td>Update</td>
+			<td>Delete</td>
+		</tr>
+		<tr>
+			<td>${s.mothers_id}</td>
+			<td>${s.mother_name}</td>
+			<td>${s.child_name}</td>
+			<td>${s.husband_name}</td>
+			<td>${s.mother_age}</td>
+			<td>${s.mo_phone_no}</td>
+			<td><a href="updateMovie/${s.mothers_id}">Update</a></td>
+			<td><a href="deleteMovie/${s.mothers_id}">Delete</a></td>
+		</tr>
+		</c:forEach>
+	</table>
+</body>
+</html>
